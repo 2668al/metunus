@@ -4,6 +4,7 @@
 iarduino_I2C_SHT sht(0x33);
 
 GyverOLED<SSD1306_128x64, OLED_NO_BUFFER> oled;
+
 void setup() {
   Serial.begin(115200);
   sht.begin();                            
@@ -24,8 +25,7 @@ void loop() {
   oled.print("т = ");
   oled.print(sht.getTem());
   oled.print("С\r\n");
-
-
+  
   oled.print("в = ");
   oled.print(sht.getHum());
   oled.print("%\r\n");
