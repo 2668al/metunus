@@ -8,16 +8,16 @@ iarduino_I2C_SHT sht(0x33);
 
 int numNewMessages;
 // Укажите свои данные сети
-const char* ssid = "realme C25s";
-const char* password = "qwertyufdsa";
+const char* ssid = "";
+const char* password = "";
 
 // Используйте @myidbot, чтобы получить ID пользователя или группы
 // Помните, что бот сможет вам писать только после нажатия
 // вами кнопки /start
-#define CHAT_ID "1111812123"
+#define CHAT_ID ""
 
 // Запустите бот Telegram
-#define BOTtoken "5160548350:AAHWp26bTr2VnEATrJ6nFLvk9JJKFYtRdq4"  // укажите токен бота
+#define BOTtoken ""  // укажите токен бота
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOTtoken, client);
